@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/ten"
+        android:elevation="@dimen/five"
+        android:layout_margin="@dimen/ten"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/fifteen"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="@dimen/thirty_five"
+                    android:layout_height="@dimen/thirty_five"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateTint="@color/buttonColor2">
+
+                </ProgressBar>
+
+                <TextView
+                    android:id="@+id/progessName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jost_bold"
+                    android:layout_below="@id/progressbar"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/ten"
+                    android:textColor="@color/buttonColor2"
+                    android:textSize="@dimen/twenty">
+
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

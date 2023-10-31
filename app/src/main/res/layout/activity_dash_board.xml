@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DashBoard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/contentFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_card" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bottom_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/ten"
+            app:cardElevation="@dimen/five"
+            android:layout_marginBottom="@dimen/ten"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/ten">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seventy"
+                android:layout_gravity="bottom"
+                android:background="@drawable/buttonnav_bg"
+                app:itemIconTint="@drawable/selector"
+                app:itemTextColor="@drawable/selector"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu_bottom"
+                android:elevation="8dp"
+                app:elevation="8dp">
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

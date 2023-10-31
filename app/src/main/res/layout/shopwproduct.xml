@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ten"
+        android:background="@drawable/product_bg">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/five"
+            android:background="@drawable/showback_bg"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview"
+                android:elevation="@dimen/five"
+                app:cardCornerRadius="@dimen/ten">
+
+                <ImageView
+                    android:layout_width="@dimen/hundred_fifty"
+                    android:layout_height="@dimen/hundred"
+                    android:src="@drawable/images_removebg_preview">
+
+                </ImageView>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/ten"
+                    android:fontFamily="@font/jost_bold"
+                    android:text="Bruton"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/twelve_size">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/jost_bold"
+                    android:text="From 449/-"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/twelve_size">
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/ten"
+                    android:background="@color/textColor"
+                    android:padding="@dimen/ten">
+
+                    <TextView
+                        android:id="@+id/timer_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/jost_bold"
+                        android:gravity="center"
+                        android:text="00:45:07"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/ten"
+                    android:fontFamily="@font/jost_bold"
+                    android:text="BID NOW"
+                    android:textColor="@color/productcolor"
+                    android:textSize="@dimen/edittextsize" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

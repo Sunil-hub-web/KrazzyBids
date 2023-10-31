@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">KrazzyBids</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_product">Product</string>
+    <string name="menu_profile">Profile</string>
+    <string name="default_web_client_id">170556923113-efi7e5usk7drhav66sj6ilken2vsav5r.apps.googleusercontent.com</string>
+</resources>

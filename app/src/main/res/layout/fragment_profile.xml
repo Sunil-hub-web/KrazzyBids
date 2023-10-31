@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundred_fifty"
+            android:layout_marginStart="@dimen/three"
+            android:layout_marginTop="@dimen/three"
+            android:layout_marginEnd="@dimen/three"
+            android:layout_marginBottom="@dimen/three"
+            android:background="@drawable/topbackground">
+
+            <ImageView
+                android:id="@+id/imag_EditBack"
+                android:layout_width="@dimen/thirty"
+                android:layout_height="@dimen/thirty"
+                android:src="@drawable/previous"
+                android:layout_margin="@dimen/ten">
+
+            </ImageView>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/hundred_eighty"
+            android:layout_height="@dimen/hundred_eighty"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/fifty"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginTop="@dimen/ten"
+            android:layout_marginEnd="@dimen/twenty"
+            android:fontFamily="@font/jost_bold"
+            android:gravity="center"
+            android:textColor="@color/profileback1"
+            android:textSize="@dimen/twenty"/>
+
+        <TextView
+            android:id="@+id/user_emailID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginStart="@dimen/twenty"
+            android:layout_marginEnd="@dimen/twenty"
+            android:layout_marginBottom="@dimen/twenty"
+            android:fontFamily="@font/jost_bold"
+            android:gravity="center"
+            android:textColor="@color/profileback1"
+            android:textSize="@dimen/twenty"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/profile_backbg"
+                android:layout_below="@+id/user_emailID"
+                android:orientation="vertical">
+
+               <ScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:scrollbars="none">
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical">
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/thirty_five"
+                           android:layout_marginLeft="@dimen/ten"
+                           android:id="@+id/rel_EditProfile">
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/editbackground"
+                               android:paddingLeft="@dimen/seven"
+                               android:paddingRight="@dimen/seven">
+
+                               <ImageView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/p11removebg_preview1"
+                                   android:layout_margin="@dimen/ten">
+
+
+                               </ImageView>
+
+
+                           </LinearLayout>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerInParent="true"
+                               android:layout_marginStart="@dimen/twenty"
+                               android:layout_marginTop="@dimen/twenty"
+                               android:layout_marginEnd="@dimen/twenty"
+                               android:layout_marginBottom="@dimen/twenty"
+                               android:fontFamily="@font/jost_bold"
+                               android:text="Edit Profile                 "
+                               android:textColor="@color/profileback1"
+                               android:textSize="@dimen/twenty">
+
+
+                           </TextView>
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/web_drop_down_right"
+                               android:layout_margin="@dimen/ten"
+                               android:layout_centerInParent="true"
+                               android:layout_alignParentRight="true">
+
+
+                           </ImageView>
+
+
+
+                       </RelativeLayout>
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/twenty"
+                           android:layout_marginLeft="@dimen/ten"
+                           android:id="@+id/rel_Packages">
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/editbackground"
+                               android:paddingLeft="@dimen/five"
+                               android:paddingRight="@dimen/five">
+
+                               <ImageView
+                                   android:layout_width="@dimen/thirty"
+                                   android:layout_height="@dimen/forty"
+                                   android:src="@drawable/package_box"
+                                   android:layout_margin="@dimen/ten">
+
+
+                               </ImageView>
+
+
+                           </LinearLayout>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerInParent="true"
+                               android:layout_marginStart="@dimen/twenty"
+                               android:layout_marginTop="@dimen/twenty"
+                               android:layout_marginEnd="@dimen/twenty"
+                               android:layout_marginBottom="@dimen/twenty"
+                               android:fontFamily="@font/jost_bold"
+                               android:text="Packages                  "
+                               android:textColor="@color/profileback1"
+                               android:textSize="@dimen/twenty">
+
+
+                           </TextView>
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/web_drop_down_right"
+                               android:layout_margin="@dimen/ten"
+                               android:layout_centerInParent="true"
+                               android:layout_alignParentRight="true">
+
+
+                           </ImageView>
+
+
+
+                       </RelativeLayout>
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/twenty"
+                           android:layout_marginLeft="@dimen/ten"
+                           android:id="@+id/rel_Settings">
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/editbackground"
+                               android:paddingLeft="@dimen/five"
+                               android:paddingRight="@dimen/five">
+
+                               <ImageView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/p3removebgpreview1"
+                                   android:layout_margin="@dimen/ten">
+
+
+                               </ImageView>
+
+
+                           </LinearLayout>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerInParent="true"
+                               android:layout_marginStart="@dimen/twenty"
+                               android:layout_marginTop="@dimen/twenty"
+                               android:layout_marginEnd="@dimen/twenty"
+                               android:layout_marginBottom="@dimen/twenty"
+                               android:fontFamily="@font/jost_bold"
+                               android:text="Setting                 "
+                               android:textColor="@color/profileback1"
+                               android:textSize="@dimen/twenty">
+
+
+                           </TextView>
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/web_drop_down_right"
+                               android:layout_margin="@dimen/ten"
+                               android:layout_centerInParent="true"
+                               android:layout_alignParentRight="true">
+
+
+                           </ImageView>
+
+
+
+                       </RelativeLayout>
+
+                       <RelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/twenty"
+                           android:layout_marginLeft="@dimen/ten"
+                           android:id="@+id/rel_Help">
+
+                           <LinearLayout
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:background="@drawable/editbackground"
+                               android:paddingLeft="@dimen/five"
+                               android:paddingRight="@dimen/five">
+
+                               <ImageView
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:src="@drawable/p4_removebg_preview"
+                                   android:layout_margin="@dimen/ten">
+
+
+                               </ImageView>
+
+
+                           </LinearLayout>
+
+                           <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerInParent="true"
+                               android:layout_marginStart="@dimen/twenty"
+                               android:layout_marginTop="@dimen/twenty"
+                               android:layout_marginEnd="@dimen/twenty"
+                               android:layout_marginBottom="@dimen/twenty"
+                               android:fontFamily="@font/jost_bold"
+                               android:text="Help                 "
+                               android:textColor="@color/profileback1"
+                               android:textSize="@dimen/twenty">
+
+
+                           </TextView>
+
+                           <ImageView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:src="@drawable/web_drop_down_right"
+                               android:layout_margin="@dimen/ten"
+                               android:layout_centerInParent="true"
+                               android:layout_alignParentRight="true">
+
+
+                           </ImageView>
+
+
+
+                       </RelativeLayout>
+
+
+                   </LinearLayout>
+
+
+
+               </ScrollView>
+
+
+
+            </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

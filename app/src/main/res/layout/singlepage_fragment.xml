@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hundred_fifty"
+                android:layout_marginStart="@dimen/three"
+                android:layout_marginTop="@dimen/three"
+                android:layout_marginEnd="@dimen/three"
+                android:layout_marginBottom="@dimen/three"
+                android:background="@drawable/topbackground">
+
+                <ImageView
+                    android:id="@+id/imageview"
+                    android:layout_width="@dimen/thirty"
+                    android:layout_height="@dimen/thirty"
+                    android:layout_margin="@dimen/ten"
+                    android:src="@drawable/previous">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name"
+                    android:textColor="@color/buttomnav1"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="@dimen/twenty_three"
+                    android:layout_marginLeft="@dimen/twenty_five"
+                    android:layout_marginTop="@dimen/ten"/>
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginTop="@dimen/hundred"
+                android:layout_marginRight="@dimen/ten"
+                android:layout_marginBottom="@dimen/ten"
+                android:elevation="@dimen/five"
+                app:cardCornerRadius="@dimen/fifteen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/editbackground"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twenty"
+                        android:layout_marginTop="@dimen/ten"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="2024 ADDIDAS  XLE FWD"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edittextsize">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twenty"
+                        android:layout_marginTop="@dimen/ten"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="Buy it Now price: $5,000"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/edittextsize">
+
+                    </TextView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/banner_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/fifteen"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:layout_marginRight="@dimen/fifteen"
+                        app:cardCornerRadius="@dimen/ten">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/product_jpeg1">
+
+
+                        </ImageView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten"
+                        android:orientation="horizontal">
+
+                        <include layout="@layout/showgalarryimage" />
+
+                        <include layout="@layout/showgalarryimage" />
+
+                        <include layout="@layout/showgalarryimage" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardImage"
+                android:layout_marginTop="@dimen/ten">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/buttomnav1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/twenty"
+                                android:layout_marginTop="@dimen/ten"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Current Bid"
+                                android:textColor="@color/textColor1"
+                                android:textSize="@dimen/edittextsize">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginStart="@dimen/twenty"
+                                android:layout_marginTop="@dimen/ten"
+                                android:layout_marginEnd="@dimen/ten"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Rs 700.53"
+                                android:textColor="@color/textColor1"
+                                android:textSize="@dimen/edittextsize">
+
+                            </TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RelativeLayout
+                                android:id="@+id/rel_ProfileImage"
+                                android:layout_width="@dimen/ninety"
+                                android:layout_height="@dimen/ninety"
+                                android:layout_margin="@dimen/five"
+                                android:background="@drawable/round_singleproduct">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ellipse">
+
+
+                                </ImageView>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_toRightOf="@+id/rel_ProfileImage"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/fifteen"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="Current Highest Bidder"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/edittextsize">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/fifteen"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="DAVID"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/edittextsize">
+
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.4"
+                                        android:src="@drawable/bdyremovebg" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/five"
+                                        android:layout_marginRight="@dimen/five"
+                                        android:layout_weight="1.5"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="23/06/1997"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/edittextsize" />
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.3"
+                                        android:src="@drawable/bluelocationicon" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="@dimen/five"
+                                        android:layout_weight="1.7"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="America"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/edittextsize" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:background="@color/textColor"
+                            android:padding="@dimen/five">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/twenty"
+                                android:layout_marginTop="@dimen/ten"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="TIME LEFT"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/twenty">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="@dimen/twenty"
+                                android:layout_marginTop="@dimen/ten"
+                                android:layout_marginRight="@dimen/ten"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="20:13:00"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/twenty">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:padding="@dimen/five">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/ten"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Bid"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsize">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginLeft="@dimen/twenty"
+                                android:layout_marginRight="@dimen/ten"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsize">
+
+                            </TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="@dimen/twenty"
+                                android:layout_marginRight="@dimen/ten"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="User"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textsize">
+
+                            </TextView>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <include layout="@layout/bidshowlayout"></include>
+
+                            <include layout="@layout/bidshowlayout"></include>
+
+                            <include layout="@layout/bidshowlayout"></include>
+
+                            <include layout="@layout/bidshowlayout"></include>
+
+                            <include layout="@layout/bidshowlayout"></include>
+
+                            <include layout="@layout/bidshowlayout"></include>
+
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/linBidWinner">
+
+                            <include layout="@layout/bidwinnerprofile"></include>
+
+                            <include layout="@layout/bidwinnerprofile"></include>
+
+                            <include layout="@layout/bidwinnerprofile"></include>
+
+                            <include layout="@layout/bidwinnerprofile"></include>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                            </androidx.recyclerview.widget.RecyclerView>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/twenty"
+                            android:layout_marginTop="@dimen/fifteen"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="Other bidders in this auction :"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/edittextsize">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:orientation="horizontal">
+
+                            <include layout="@layout/otherbiderdetails" />
+
+                            <include layout="@layout/otherbiderdetails" />
+
+                            <include layout="@layout/otherbiderdetails" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.core.widget.NestedScrollView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

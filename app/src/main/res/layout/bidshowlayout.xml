@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:padding="@dimen/five">
+
+        <TextView
+            android:id="@+id/bidprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ten"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Rs 600.03"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/bidtimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:fontFamily="@font/poppins_bold"
+            android:text="1:33:00"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/ten"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/bidprice"
+            android:layout_toLeftOf="@id/bidtimer"
+            android:layout_marginLeft="@dimen/ten"
+            android:layout_marginRight="@dimen/ten">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/thirty"
+                    android:layout_height="@dimen/thirty"
+                    android:background="@drawable/round_category"
+                    android:id="@+id/rel_ProfileImage">
+
+                    <ImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="@dimen/thirty"
+                        android:layout_height="@dimen/thirty"
+                        android:src="@drawable/ellipse" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/five"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Smith37qqqq"
+                    android:layout_toRightOf="@id/rel_ProfileImage"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize"
+                    android:layout_centerInParent="true">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

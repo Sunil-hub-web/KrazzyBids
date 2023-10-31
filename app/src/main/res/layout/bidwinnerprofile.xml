@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/singlepage_bidwinner_bg"
+        android:elevation="@dimen/ten"
+        android:layout_margin="@dimen/five">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/singlepage_bidwinner_bg1"
+            android:layout_marginLeft="@dimen/five">
+
+            <ImageView
+                android:id="@+id/img_rupe"
+                android:layout_width="@dimen/twenty_five"
+                android:layout_height="@dimen/twenty_five"
+                android:layout_marginStart="@dimen/ten"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                android:layout_marginBottom="@dimen/ten"
+                android:src="@drawable/rupee">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/img_rupe"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/ten"
+                android:id="@+id/lin_price">
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Est. Total Cost"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textsize">
+
+                    </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Rs 682.87"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="556 Bids Placed"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/ten">
+
+                <ImageView
+                    android:id="@+id/img_user"
+                    android:layout_width="@dimen/twenty_five"
+                    android:layout_height="@dimen/twenty_five"
+                    android:layout_marginStart="@dimen/ten"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginEnd="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:src="@drawable/user">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_user"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Est. Total Cost"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_below="@id/lin_price">
+
+                <ImageView
+                    android:id="@+id/img_rupe1"
+                    android:layout_width="@dimen/twenty_five"
+                    android:layout_height="@dimen/twenty_five"
+                    android:layout_marginStart="@dimen/ten"
+                    android:layout_marginTop="@dimen/ten"
+                    android:layout_marginEnd="@dimen/ten"
+                    android:layout_marginBottom="@dimen/ten"
+                    android:src="@drawable/rupee">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/img_rupe1"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Final Bid  :  Rs 571.67 (9/16/2023)"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

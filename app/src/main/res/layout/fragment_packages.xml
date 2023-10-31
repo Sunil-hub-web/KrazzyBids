@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hundred_fifty"
+            android:layout_marginStart="@dimen/three"
+            android:layout_marginTop="@dimen/three"
+            android:layout_marginEnd="@dimen/three"
+            android:layout_marginBottom="@dimen/three"
+            android:background="@drawable/topbackground">
+
+            <ImageView
+                android:id="@+id/image_PackageEdit"
+                android:layout_width="@dimen/thirty"
+                android:layout_height="@dimen/thirty"
+                android:src="@drawable/previous"
+                android:layout_margin="@dimen/ten">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Packages"
+                android:textColor="@color/buttomnav1"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/twenty_three"
+                android:layout_marginLeft="@dimen/twenty_five"
+                android:layout_marginTop="@dimen/ten"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/packagesRecycler"
+        android:layout_marginTop="@dimen/hundred">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

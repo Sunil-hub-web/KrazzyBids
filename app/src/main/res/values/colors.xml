@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color1">#1EB4E3</color>
+    <color name="textColor">#080F3F</color>
+    <color name="buttonColor">#169CC7</color>
+    <color name="hintColor">#534848</color>
+    <color name="buttomnav">#B5B2B2</color>
+    <color name="hintColor1">#534848</color>
+    <color name="background">#F5F5F5</color>
+    <color name="productcolor">#094C62</color>
+    <color name="profileback">#DAEDF1</color>
+    <color name="profileback1">#443737</color>
+    <color name="textColor1">#0E88AE</color>
+    <color name="buttomnav1">#F2F2F2</color>
+    <color name="textColor2">#1D2C95</color>
+    <color name="buttonColor2">#42134A</color>
+</resources>

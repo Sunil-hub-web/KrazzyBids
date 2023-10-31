@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "170556923113",
+    "project_id": "krazzybids",
+    "storage_bucket": "krazzybids.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170556923113:android:ca60a23df8aee134526478",
+        "android_client_info": {
+          "package_name": "com.example.krazzybids"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3CN4q0zgwhFAHbGchgeHikD76eyzXKco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
